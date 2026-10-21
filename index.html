@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b1c">
+  <title>20/10 — Gửi những bông hoa của lớp mình</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="night-sky" id="nightSky" aria-hidden="true"></div>
+  <div class="nebula nebula-one" aria-hidden="true"></div>
+  <div class="nebula nebula-two" aria-hidden="true"></div>
+  <div class="floating-petals" id="floatingPetals" aria-hidden="true"></div>
+
+  <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false">
+    <span class="music-icon">♫</span><span id="musicLabel">Bật nhạc</span>
+  </button>
+  <audio id="bgMusic" loop preload="none">
+    <!-- Đặt file nhạc của mày tên music.mp3 trong cùng thư mục rồi bỏ comment dòng dưới. -->
+    <!-- <source src="music.mp3" type="audio/mpeg"> -->
+  </audio>
+
+  <main>
+    <section class="hero section" id="home">
+      <p class="eyebrow">A LITTLE CELEBRATION FOR YOU</p>
+      <div class="moon" aria-hidden="true"></div>
+      <h1>Chúc mừng<br><span>ngày 20/10</span></h1>
+      <p class="hero-subtitle">Gửi những bông hoa rực rỡ nhất của lớp chúng mình 🌷</p>
+      <p class="hero-note">Một món quà nhỏ, dành tặng những cô gái tuyệt vời.</p>
+      <button class="primary-button" id="openGift" type="button">Mở món quà ✨</button>
+      <div class="scroll-hint" aria-hidden="true">CUỘN XUỐNG ĐỂ KHÁM PHÁ <span>↓</span></div>
+    </section>
+
+    <section class="gift-section section" id="gift">
+      <div class="section-heading">
+        <p class="eyebrow">FOR ALL THE AMAZING GIRLS</p>
+        <h2>Mỗi bạn là một <span>bông hoa</span></h2>
+        <p>Chúc các bạn luôn tự tin, vui vẻ và tỏa sáng theo cách riêng của mình.</p>
+      </div>
+      <div class="bouquet-wrap">
+        <div class="glow-ring"></div>
+        <div class="bouquet-stage" aria-label="Bó hoa hồng hồng chuyển động">
+          <div class="bouquet-orbit orbit-one"></div><div class="bouquet-orbit orbit-two"></div>
+          <div class="bouquet" aria-label="Bó hoa hồng minh họa">
+            <span class="bouquet-flower f01">🌸</span><span class="bouquet-flower f02">🌹</span><span class="bouquet-flower f03">🌸</span><span class="bouquet-flower f04">🌷</span><span class="bouquet-flower f05">🌹</span>
+            <span class="bouquet-flower f06">🌸</span><span class="bouquet-flower f07">🌷</span><span class="bouquet-flower f08">🌹</span><span class="bouquet-flower f09">🌸</span><span class="bouquet-flower f10">🌹</span>
+            <span class="bouquet-flower f11">🌷</span><span class="bouquet-flower f12">🌸</span><span class="bouquet-flower f13">🌹</span><span class="bouquet-flower f14">🌸</span><span class="bouquet-flower f15">🌷</span>
+            <span class="bouquet-flower f16">🌹</span><span class="bouquet-flower f17">🌸</span><span class="bouquet-flower f18">🌹</span><span class="bouquet-flower f19">🌷</span><span class="bouquet-flower f20">🌸</span>
+            <span class="bouquet-leaf leaf-a">🌿</span><span class="bouquet-leaf leaf-b">🌿</span><span class="bouquet-ribbon">♡</span>
+          </div>
+          <span class="bouquet-spark spark-a">✦</span><span class="bouquet-spark spark-b">✧</span><span class="bouquet-spark spark-c">✦</span>
+        </div>
+        <p class="bouquet-caption">Dành tặng những nụ cười làm lớp mình thêm rực rỡ.</p>
+      </div>
+      <div class="wish-grid">
+        <article class="wish-card"><span>🌸</span><h3>Luôn rạng rỡ</h3><p>Mong mỗi ngày đến lớp đều có thật nhiều niềm vui và tiếng cười.</p></article>
+        <article class="wish-card"><span>✨</span><h3>Luôn tự tin</h3><p>Chúc các bạn tin vào bản thân và can đảm theo đuổi điều mình yêu thích.</p></article>
+        <article class="wish-card"><span>💗</span><h3>Luôn được yêu thương</h3><p>Mong những điều dịu dàng, tử tế sẽ luôn tìm đến với mỗi người.</p></article>
+      </div>
+    </section>
+
+    <section class="memories-section section" id="memories">
+      <div class="section-heading">
+        <p class="eyebrow">OUR LITTLE UNIVERSE</p>
+        <h2>Góc nhỏ <span>kỷ niệm</span></h2>
+        <p>Thay các khung mẫu bằng ảnh lớp, ảnh hoạt động hoặc những khoảnh khắc đáng nhớ nhé.</p>
+      </div>
+      <div class="photo-orbit">
+        <button class="photo-card tilt-left" data-photo="0" type="button" aria-label="Mở ảnh kỷ niệm 1">
+          <div class="photo-placeholder"><span>📸</span><small>THÊM ẢNH LỚP Ở ĐÂY</small></div><p>Thanh xuân của chúng mình</p>
+        </button>
+        <button class="photo-card tilt-right" data-photo="1" type="button" aria-label="Mở ảnh kỷ niệm 2">
+          <div class="photo-placeholder pink"><span>🌷</span><small>THÊM ẢNH BẠN BÈ Ở ĐÂY</small></div><p>Những người bạn tuyệt vời</p>
+        </button>
+        <button class="photo-card tilt-left lower" data-photo="2" type="button" aria-label="Mở ảnh kỷ niệm 3">
+          <div class="photo-placeholder blue"><span>🌙</span><small>THÊM KHOẢNH KHẮC Ở ĐÂY</small></div><p>Một ngày thật đáng nhớ</p>
+        </button>
+      </div>
+      <p class="tiny-hint">Mẹo: mở file <code>script.js</code> để biết cách thay ảnh thật.</p>
+    </section>
+
+    <section class="letters-section section" id="letters">
+      <div class="section-heading">
+        <p class="eyebrow">OPEN WHEN YOU NEED A SMILE</p>
+        <h2>Những lời nhắn <span>nhỏ xinh</span></h2>
+        <p>Chọn một phong bì bất kỳ để mở lời chúc dành cho bạn.</p>
+      </div>
+      <div class="envelope-grid">
+        <button class="envelope" data-letter="0" type="button"><span class="envelope-emoji">💌</span><span>Mở khi cần một nụ cười</span><small>01 — LỜI NHẮN</small></button>
+        <button class="envelope" data-letter="1" type="button"><span class="envelope-emoji">💌</span><span>Mở khi thấy mệt mỏi</span><small>02 — LỜI NHẮN</small></button>
+        <button class="envelope" data-letter="2" type="button"><span class="envelope-emoji">💌</span><span>Mở để nhận lời chúc</span><small>03 — LỜI NHẮN</small></button>
+      </div>
+    </section>
+
+    <section class="final-section section">
+      <div class="final-star">✦</div>
+      <p class="eyebrow">HAPPY VIETNAMESE WOMEN'S DAY</p>
+      <h2>Chúc các bạn nữ<br><span>một ngày 20/10 thật vui!</span></h2>
+      <p>Cảm ơn vì đã làm nên những sắc màu thật đẹp của lớp mình. Hãy luôn là chính mình nhé! 💖</p>
+      <button class="secondary-button" id="backToTop" type="button">Trở về bầu trời sao ↑</button>
+      <footer>Made with ♡ by our class</footer>
+    </section>
+  </main>
+
+  <div class="modal hidden" id="letterModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close-modal></div>
+    <article class="letter-paper">
+      <button class="modal-close" type="button" aria-label="Đóng thư" data-close-modal>×</button>
+      <div class="paper-flower">🌷</div>
+      <p class="eyebrow">A LITTLE NOTE FOR YOU</p>
+      <h2 id="modalTitle">Gửi bạn 💗</h2>
+      <p id="modalMessage"></p>
+      <div class="paper-signature">Thân mến,<br><strong>Tập thể lớp mình</strong></div>
+    </article>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
